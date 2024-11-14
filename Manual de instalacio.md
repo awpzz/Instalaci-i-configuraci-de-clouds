@@ -12,6 +12,7 @@ Primer, assegura't que el teu sistema operatiu estigui actualitzat per evitar pr
 sudo apt update
 sudo apt upgrade
 ```
+<img src="Images/sudo apt upupg.PNG" alt="Utilitzar comandes en terminal">
 
 ## 2. Instal·lació de `apache2`
 
