@@ -55,17 +55,17 @@ Accedeix a la consola de `MySQL`:
 sudo mysql
 ```
 
-### Crear una base de dades i un usuari
+### Crear una base de dades i un usuario
 
 1. **Crear la base de dades**:
    ```sql
    CREATE DATABASE bbdd;
    ```
 
-2. **Crear un usuari i assignar permisos**:
+2. **Crear un usuario i assignar permisos**:
    ```sql
-   CREATE USER 'usuari'@'localhost' IDENTIFIED WITH mysql_native_password BY 'contrasenya';
-   GRANT ALL ON bbdd.* TO 'usuari'@'localhost';
+   CREATE USER 'usuario'@'localhost' IDENTIFIED WITH mysql_native_password BY '0wnC10ud';
+   GRANT ALL ON bbdd.* TO 'usuario'@'localhost';
    ```
 
 3. **Sortir de `MySQL`**:
@@ -75,10 +75,10 @@ sudo mysql
 
 ### Comprovar la connexió
 
-Prova de connectar-te a la base de dades amb l'usuari que acabes de crear:
+Prova de connectar-te a la base de dades amb l'usuario que acabes de crear:
 
 ```bash
-mysql -u usuari -p
+mysql -u usuario -p
 ```
 
 ## 7. Permetre connexions des d'una màquina remota (Opcional)
@@ -143,7 +143,7 @@ Configura els permisos i la propietat dels fitxers perquè `apache2` els pugui g
 
 ```bash
 sudo chmod -R 775 /var/www/html
-sudo chown -R usuari:www-data /var/www/html
+sudo chown -R usuario:www-data /var/www/html
 ```
 
 ## 11. Accés i configuració al navegador
@@ -151,7 +151,7 @@ sudo chown -R usuari:www-data /var/www/html
 Obre el teu navegador i accedeix a `http://localhost`. Hauries de veure l'instal·lador de la teva aplicació web.
 
 **Informació d'accés per a la base de dades**:
-- **Usuari**: `usuari`
-- **Contrasenya**: `contrasenya`
+- **usuario**: `usuario`
+- **Contrasenya**: `0wnC10ud`
 - **Base de dades**: `bbdd`
 - **Domini**: `localhost`
